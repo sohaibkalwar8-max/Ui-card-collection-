@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Card Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">UI<span>Cards.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#cards">Cards</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a href="#cards" class="nav-btn">Explore Cards ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">MODERN UI COMPONENTS</span>
+
+        <h1>Beautiful Cards for<br>
+          <span>Your Next Project.</span>
+        </h1>
+
+        <p>
+          A collection of reusable cards and interface
+          components with modern styling and animations.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cards" class="btn primary">Explore Collection ↗</a>
+          <a href="#about" class="btn secondary">Learn More</a>
+        </div>
+
+        <div class="hero-note">
+          <span>✦ 6 Components</span>
+          <span>✓ Responsive Design</span>
+          <span>↗ Smooth Animations</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <div class="art-card back-card">
+          <span class="art-icon">▦</span>
+          <div class="art-line"></div>
+          <div class="art-line small"></div>
+          <div class="art-blocks">
+            <i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <div class="art-card front-card">
+          <span class="art-icon">✦</span>
+          <h3>Simple.<br>Modern.<br><span>Reusable.</span></h3>
+          <p>DESIGN SYSTEM — 01</p>
+        </div>
+
+        <span class="float-icon">♡</span>
+        <span class="float-icon second">✧</span>
+      </div>
+    </section>
+
+    <section class="collection section" id="cards">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE COLLECTION</span>
+          <h2>Cards that make an <span>impact.</span></h2>
+          <p>Explore different components made for modern websites.</p>
+        </div>
+        <span class="collection-count">06 COMPONENTS</span>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All Cards</button>
+        <button class="filter-btn" data-filter="feature">Features</button>
+        <button class="filter-btn" data-filter="profile">Profiles</button>
+        <button class="filter-btn" data-filter="stats">Statistics</button>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="ui-card" data-category="feature">
+          <div class="card-cover cover-blue">
+            <span class="cover-symbol">✦</span>
+            <span class="cover-label">DESIGN</span>
+          </div>
+          <div class="card-body">
+            <span class="category blue">FEATURE</span>
+            <h3>Creative Design</h3>
+            <p>Beautiful interfaces with clean layouts and thoughtful details.</p>
+            <div class="card-bottom">
+              <span class="card-meta">UI / UX</span>
+              <button class="like-btn" aria-label="Like Creative Design">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ui-card" data-category="feature">
+          <div class="card-cover cover-purple">
+            <span class="cover-symbol">◈</span>
+            <span class="cover-label">LAYOUT</span>
+          </div>
+          <div class="card-body">
+            <span class="category purple">FEATURE</span>
+            <h3>Responsive Layout</h3>
+            <p>Flexible components that adapt to different screen sizes.</p>
+            <div class="card-bottom">
+              <span class="card-meta">RESPONSIVE</span>
+              <button class="like-btn" aria-label="Like Responsive Layout">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ui-card" data-category="feature">
+          <div class="card-cover cover-orange">
+            <span class="cover-symbol">⚡</span>
+            <span class="cover-label">MOTION</span>
+          </div>
+          <div class="card-body">
+            <span class="category orange">FEATURE</span>
+            <h3>Interactive UI</h3>
+            <p>Small interactions and animations that improve user experience.</p>
+            <div class="card-bottom">
+              <span class="card-meta">INTERACTION</span>
+              <button class="like-btn" aria-label="Like Interactive UI">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ui-card" data-category="profile">
+          <div class="profile-cover"></div>
+          <div class="card-body profile-body">
+            <div class="avatar">SK</div>
+            <span class="category blue">PROFILE</span>
+            <h3>Sohaib Khan</h3>
+            <p>Frontend Developer creating clean and useful web experiences.</p>
+            <div class="card-bottom">
+              <span class="card-meta">CREATIVE BUILDER</span>
+              <button class="detail-btn" data-title="Sohaib Khan"
+                data-description="A sample profile card for a frontend developer.">
+                Details ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ui-card" data-category="stats">
+          <div class="card-body stats-body">
+            <span class="category green">STATISTICS</span>
+            <div class="stat-icon">↗</div>
+            <p class="stat-label">Projects Completed</p>
+            <h3 class="stat-number">128<span>+</span></h3>
+            <div class="stat-progress"><span></span></div>
+            <div class="card-bottom">
+              <span class="card-meta">SAMPLE DATA</span>
+              <button class="like-btn" aria-label="Like Projects Statistics">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ui-card" data-category="stats">
+          <div class="card-body stats-body">
+            <span class="category purple">STATISTICS</span>
+            <div class="stat-icon purple-stat">◎</div>
+            <p class="stat-label">User Engagement</p>
+            <h3 class="stat-number">94<span>%</span></h3>
+            <div class="stat-progress purple-progress"><span></span></div>
+            <div class="card-bottom">
+              <span class="card-meta">SAMPLE DATA</span>
+              <button class="like-btn" aria-label="Like Engagement Statistics">♡</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="empty-message" id="emptyMessage" hidden>
+        No cards found in this category.
+      </p>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-icon">▧</div>
+      <div class="about-content">
+        <span class="eyebrow">BUILT FOR REUSE</span>
+        <h2>One collection.<br><span>Endless possibilities.</span></h2>
+        <p>
+          These sample components demonstrate how consistent styling,
+          reusable layouts and small interactions can bring a website
+          together.
+        </p>
+      </div>
+      <a href="#cards" class="btn primary">Explore Components ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">UI<span>Cards.</span></a>
+    <p>A frontend practice project built with HTML, CSS and JavaScript.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
